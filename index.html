@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>跑马吗 · 隐私政策</title>
+<meta name="description" content="跑马吗是一款完全离线的马拉松赛事查询应用：不申请任何权限、运行时不发起任何网络请求、没有账号体系，也不接入任何第三方 SDK。">
+<style>
+  :root{
+    --fg:#1c1c1e; --mid:#5b5b60; --low:#8a8a8f; --line:#e6e2df;
+    --bg:#fbf8f6; --card:#fff; --brand:#cf1322; --warn-bg:#fff4e6; --warn-fg:#ad4e00;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --fg:#f2eeec; --mid:#b4b0ac; --low:#8d8985; --line:#33302e;
+      --bg:#151312; --card:#1e1c1a; --warn-bg:#2a2013; --warn-fg:#f0b269; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","HarmonyOS Sans SC",
+         "Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{max-width:44rem;margin:0 auto;padding:48px 20px 96px}
+  header h1{font-size:30px;line-height:1.35;margin:0 0 6px;letter-spacing:-.2px}
+  header .sub{color:var(--mid);font-size:15px;margin:0}
+  .lede{
+    margin:28px 0 8px;padding:20px 22px;background:var(--card);
+    border:1px solid var(--line);border-radius:14px;
+  }
+  .lede p{margin:0 0 10px;font-size:17px;font-weight:600;line-height:1.7}
+  .lede p:last-child{margin:0}
+  .lede ul{margin:0;padding-left:20px;color:var(--mid);font-size:15px}
+  h2{font-size:19px;margin:40px 0 10px;padding-top:6px;letter-spacing:-.1px}
+  h3{font-size:16px;margin:22px 0 6px}
+  p{margin:0 0 12px}
+  ul,ol{margin:0 0 14px;padding-left:22px}
+  li{margin:5px 0}
+  a{color:var(--brand)}
+  table{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:15px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--low);font-weight:600;font-size:13px;letter-spacing:.3px;text-transform:uppercase}
+  /* 状态列必须整词成行：窄屏下它曾被挤成「不采/集」两行，读起来像排版坏了 */
+  table td:nth-child(2),table th:nth-child(2){white-space:nowrap;width:1%}
+  .ok{color:#0a7d43;font-weight:600}
+  .no{color:var(--low)}
+  @media (prefers-color-scheme:dark){.ok{color:#49c98a}}
+  .note{
+    padding:14px 16px;background:var(--warn-bg);color:var(--warn-fg);
+    border-radius:12px;font-size:15px;margin:16px 0
+  }
+  .meta{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);
+        color:var(--low);font-size:14px}
+  .meta dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:10px 0 0}
+  .meta dt{color:var(--mid)}
+  .meta dd{margin:0}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+       background:rgba(127,127,127,.14);padding:1px 5px;border-radius:5px}
+  @media print{body{background:#fff}:root{--bg:#fff;--card:#fff}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>跑马吗 · 隐私政策</h1>
+  <p class="sub">本页面是「跑马吗」应用内「设置 → 隐私政策」入口指向的唯一正式文本。</p>
+</header>
+
+<section class="lede">
+  <p>跑马吗是一款完全离线的马拉松赛事查询应用。它不联网、不申请任何系统权限、没有账号，也不收集关于你的任何信息。</p>
+  <ul>
+    <li>不申请任何权限（包括网络、位置、通讯录、相机、麦克风、相册、通知）</li>
+    <li>应用运行时不发起任何网络请求</li>
+    <li>没有账号体系，没有服务端，没有数据上传</li>
+    <li>不接入任何第三方 SDK、广告或统计组件</li>
+  </ul>
+</section>
+
+<h2>一、适用范围</h2>
+<p>本政策适用于「跑马吗」应用程序（开发者与版本信息见页尾）及其随包发布的全部内容。它不适用于任何第三方网站或服务——应用内展示的赛事来源链接指向第三方页面，访问这些页面时的行为由该第三方自己的政策约束。</p>
+
+<h2>二、我们收集的信息：不收集</h2>
+<p>跑马吗不收集、不接收、不存储、不传输任何可识别到个人的信息。逐项说明如下：</p>
+<table>
+  <thead><tr><th>常见采集项</th><th>本应用</th><th>说明</th></tr></thead>
+  <tbody>
+    <tr><td>设备标识符（OAID / UDID / 序列号等）</td><td class="no">不采集</td><td>应用无任何标识符读取逻辑</td></tr>
+    <tr><td>地理位置</td><td class="no">不采集</td><td>未申请位置权限，也无法读取定位</td></tr>
+    <tr><td>通讯录、通话记录、短信</td><td class="no">不采集</td><td>未申请相关权限</td></tr>
+    <tr><td>相机、麦克风</td><td class="no">不采集</td><td>未申请相关权限</td></tr>
+    <tr><td>相册、文件（读取）</td><td class="no">不采集</td><td>应用不读取用户文件</td></tr>
+    <tr><td>通知权限</td><td class="no">不申请</td><td>当前版本不提供任何消息推送或提醒功能</td></tr>
+    <tr><td>网络访问</td><td class="no">不申请</td><td>见第四节</td></tr>
+    <tr><td>行为埋点 / 统计 / 崩溃上报</td><td class="no">无</td><td>无任何上报通道</td></tr>
+  </tbody>
+</table>
+<div class="note">如果你希望核验以上说法：应用仅使用 HarmonyOS 提供的系统能力，未引入任何第三方运行时依赖；由于不申请网络权限，它在技术上也无法把数据发出去。</div>
+
+<h2>三、存在你设备上的数据</h2>
+<p>本应用唯一会写入的数据，是你主动操作产生的<b>我的收藏</b>：</p>
+<ul>
+  <li><b>内容</b>：你收藏的赛事编号列表。</li>
+  <li><b>位置</b>：仅存储在本机应用私有数据目录中（HarmonyOS 首选项 <code>preferences</code>，键名 <code>favoriteIds</code>）。</li>
+  <li><b>去向</b>：不上传、不同步、不共享，也不跨设备迁移。杀掉进程后仍然保留，卸载或更换设备后即消失。</li>
+  <li><b>如何清除</b>：在应用内取消收藏；或在系统「设置 → 应用 → 跑马吗 → 清除数据」一次性清空；卸载应用同样会清除。</li>
+</ul>
+<p>除收藏之外，本应用不记录你的浏览历史、点击行为或搜索内容。</p>
+
+<h2>四、网络行为</h2>
+<p>跑马吗的赛事数据是<b>随安装包一起发布</b>的本地数据集，应用运行时<b>不发起任何网络请求</b>，也不声明网络访问权限。因此：</p>
+<ul>
+  <li>不存在数据在公网上的传输，也不存在跨境数据传输；</li>
+  <li>不存在服务端日志记录你的访问；</li>
+  <li>离线状态与联网状态下，应用功能完全一致。</li>
+</ul>
+
+<h2>五、第三方 SDK 与共享</h2>
+<p>本应用不接入任何第三方 SDK、广告 SDK、统计或推送组件，不与任何第三方共享数据，也不存在数据买卖、租赁或交换行为。</p>
+
+<h2>六、赛事内容的来源与准确性</h2>
+<p>虽不采集你的信息，但我们有义务说明你看到的内容从哪来：</p>
+<ul>
+  <li><b>赛事基础信息</b>（名称、日期、地点、认证等级、竞赛项目、主办单位）来自中国田径协会官方赛事平台（runchina）公开的赛历接口，抓取后随包发布。</li>
+  <li><b>报名、抽签、缴费、补录、领物、起终点</b>等日程信息，赛历接口并不提供，我们逐场核对公开竞赛规程、报名公告与官方回顾稿后补入，并在应用内标注来源链接。查不到准确信息的一律留空，不用猜测值填充。</li>
+  <li><b>赛历是快照</b>：某一届临时取消或改期，官方接口不会回头修正。我们逐场核对时发现的不实记录，会在应用内以「赛历更正」如实标出并附出处。</li>
+  <li><b>比赛线路</b>：依次经过的路段与地点名逐场摘自公开原文；折线几何由 OpenStreetMap 数据生成。线路几何 © OpenStreetMap contributors（ODbL）。应用内展示的线路图是<b>本地矢量示意图</b>，只表示大致走向，不表示道路位置，也不是地图。</li>
+  <li><b>赛事配图</b>：应用内的赛事装饰性配图为 <b>AI 生成的示意图</b>，不代表任何真实赛事的现场照片，与具体赛事无对应关系。</li>
+</ul>
+<p>以上信息仅供查询参考，报名与参赛请以组委会官方发布为准。因依据应用内信息作出决定而造成的后果，本应用不承担责任。</p>
+
+<h2>七、未成年人</h2>
+<p>本应用不采集任何个人信息，也不提供账号、社交、支付或内容发布功能，因此不存在面向未成年人的数据收集行为。马拉松路跑活动对参与者年龄与健康状况有要求，未成年人使用本应用查询信息建议在监护人指导下进行。</p>
+
+<h2>八、政策变更</h2>
+<p>如果未来版本引入任何需要联网、申请权限或采集信息的功能（例如赛事提醒），我们会<b>先更新本政策并重新取得你的同意</b>，再上线该功能。变更后的政策会在本页面公布，并在应用内「关于」中同步版本号与生效日期。</p>
+
+<h2>九、联系我们</h2>
+<p>对本政策有任何疑问、意见，或希望我们更正某场赛事的信息，请联系：<br>
+开发者：<span class="ok">【请填写开发者名称】</span><br>
+邮箱：<span class="ok">【请填写联系邮箱】</span><br>
+我们将在收到邮件后 15 个工作日内回复。</p>
+
+<footer class="meta">
+  <p><b>本版本生效日期</b>：【请填写，格式 YYYY-MM-DD】　　<b>政策版本</b>：1.0</p>
+  <dl>
+    <dt>应用名称</dt><dd>跑马吗</dd>
+    <dt>应用版本</dt><dd>1.0.0</dd>
+    <dt>运行平台</dt><dd>HarmonyOS（API 26）</dd>
+    <dt>包名</dt><dd>【请填写正式 bundleName，须与备案一致】</dd>
+    <dt>ICP 备案号</dt><dd>【请填写 APP 备案/ICP 号】</dd>
+    <dt>权限申请</dt><dd>无</dd>
+  </dl>
+</footer>
+</main>
+</body>
+</html>
